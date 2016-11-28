@@ -3,6 +3,7 @@ package id.sch.smktelkom_mlg.project.xirpl504132231.indonesiaku;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 
 public class pahlawan extends AppCompatActivity {
@@ -64,5 +65,14 @@ public class pahlawan extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setTitle("PAHLAWAN");
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
