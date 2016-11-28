@@ -1,27 +1,17 @@
 package id.sch.smktelkom_mlg.project.xirpl504132231.indonesiaku;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.view.View;
 
-public class MasukActivity extends AppCompatActivity {
+public class p6 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_masuk);
-
-        findViewById(R.id.plh).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MasukActivity.this, pahlawan.class));
-            }
-        });
-
+        setContentView(R.layout.activity_p6);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        setTitle("MENU");
+        setTitle("Pahlawan");
 
     }
 
@@ -35,4 +25,3 @@ public class MasukActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
-
